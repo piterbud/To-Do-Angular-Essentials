@@ -1,0 +1,40 @@
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2.5rem auto;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2rem;
+}
+
+#users {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+#fallback {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: 4rem auto;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  #users {
+    flex-direction: column;
+  }
+
+  #fallback {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
